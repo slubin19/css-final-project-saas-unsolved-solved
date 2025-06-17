@@ -1,0 +1,703 @@
+*{
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+.background
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  min-height: 480px;
+}
+.logoContainer
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  pointer-events: none;
+}
+.logoSection
+{
+  flex: 2;
+  height: 446px;
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+}
+.logoCircle
+{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  border: 0.25px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  right: 0;
+}
+.googleLogo
+{ 
+  top: 80px;
+  right: 290px;
+  transform: scale(0.75);
+}
+.atlassianLogo
+{
+  top: 80px;
+  right: 200px;
+}
+.asanaLogo
+{
+  top: 80px;
+  right: 60px;
+}
+.paypalLogo
+{
+  top: 200px;
+  right: 300px;
+}
+.weaveLogo
+{
+  top: 200px;
+  right: 120px;
+}
+.google-adsLogo
+{
+  top: 300px;
+  right: 250px;
+}
+.calendarLogo
+{
+  top: 380px;
+  right: 120px;
+}
+.logoCircle.googleLogo
+{
+  animation: logoSlideLeft 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle.atlassianLogo
+{
+  animation: logoDrop 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle.asanaLogo
+{
+  animation: logoRise 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle.google-adsLogo
+{
+  animation: logoSlideLeft 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle.paypalLogo
+{
+  animation: logoSlideLeft 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle.weaveLogo
+{
+  animation: logoDrop 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle.calendarLogo
+{
+  animation: logoRise 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.logoCircle img
+{
+  width: 80%;
+  max-width: 32px;
+  height: auto;
+  padding: 3px;
+  box-sizing: border-box;
+  display: block;
+}
+@keyframes logoRise
+{
+  from
+  {
+    opacity: 0%;
+    transform: translateY(250px);
+  }
+  to
+  {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes logoDrop
+{
+  from
+  {
+    transform: translateY(-250px);
+  }
+  to
+  {
+    transform: translateY(0px);
+  }
+}
+@keyframes logoSlideLeft
+{
+  from
+  {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  to
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.topSection .content
+{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: auto;
+}
+.topSection .content
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: auto;
+  justify-content: flex-start;
+}
+.rest
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-end;
+}
+a
+{
+  text-decoration: none;
+  font-size: 10px;
+}
+button
+{
+  font-size: 10px;
+  border-radius: 999px;
+  background-color: rgb(0, 81, 255);
+  color: white;
+  border: 1px solid rgb(0, 81, 255);
+  padding: 5px 10px;
+}
+button:hover
+{
+  background-color: white;
+  color: rgb(0, 170, 255);
+}
+.background-img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text
+{
+  display: flex;
+  flex-direction: column;
+}
+.backgroundContent
+{
+  margin-left: auto;
+  margin-right: 10%;
+  padding-left: 20px;
+  padding-top: 100px;
+  width: 100%;
+}
+.background button
+{
+  width: max-content;
+}
+.whyFrontSection
+{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 75px;
+  margin-right: 75px;
+  text-align: center;
+  font-size: 10px;
+}
+.whyFrontSection h2
+{
+  font-size: 22px;
+}
+.lineConnect
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+  width: 90%;
+  height: 0;
+  border: 0.5px solid rgb(185, 181, 181);
+  align-self: center;
+}
+.circleDot
+{
+  z-index: 1;
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  background-color: rgb(213, 235, 235);
+  opacity: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.innerDot
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2;
+  height: 1.5px;
+  width: 1.5px;
+  border: 1px solid rgb(15, 40, 232);
+  background-color: rgb(15, 40, 232);
+  opacity: 100%;
+  border-radius: 50%;
+}
+.features-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.pricingSection
+{
+  padding: 20px;
+}
+.pricingSection .head
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 75px;
+  margin-right: 75px;
+  text-justify: center;
+  font-size: 10px;
+  padding: 50px;
+}
+.pricingSection .head h2
+{
+  font-size: 22px;
+}
+.pricingSection .content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+}
+.item
+{
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 20px;
+}
+.itemGroup
+{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 10px;
+}
+.itemGroup:hover
+{
+  border: .3px solid rgb(211, 206, 206);
+  transform: scale(1.05);
+}
+.sket
+{ 
+  margin: 5px;
+  background-color: rgb(57, 218, 164);
+  border: 1px solid rgb(57, 218, 164);
+}
+.sket:hover
+{
+  background-color: white;
+  border: 1px solid rgb(57, 218, 164);;
+  color: rgb(57, 218, 164);
+}
+.rowsplit
+{
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  object-fit: contain;
+}
+.rowsplit p
+{
+  font-size: x-small;
+}
+.linesplit
+{
+  border: 0.5px solid black;
+  height: 0.5px;
+  width: 100%;
+}
+.hireUsSection
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(25, 25, 100);
+  color: white;
+  border: 1px solid rgb(36, 36, 137);
+  padding: 30px;
+}
+.left
+{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+.right
+{
+  border-radius: 5%;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-control
+{
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+.form-control input[type="checkbox"]
+{
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.form-control label[for="consent"]
+{
+  font-size: 10px;
+  line-height: 1.4;
+  display: inline-block;
+  vertical-align: middle;
+}
+input,
+select,
+textarea
+{
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+textarea
+{
+  min-height: 12em;
+  max-height: 30em;
+  resize: none;
+}
+.boxsize
+{
+  width: 30%;
+}
+.form-control a
+{
+  text-decoration: dotted underline;
+  font-size: 10px;
+  margin: 0 10px;
+}
+.linesplitLeft
+{
+  border: 0.2px solid white;
+  height: 0.2px;
+  width: 100%;
+  margin: 10px 0;
+}
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footsplit
+{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  margin: 5px;
+}
+.footsplit img
+{
+  width: 100px;
+  margin: 10px;
+}
+a button
+{
+  transform: scale(0.5);
+}
+a
+h1
+{
+  color: orange;
+}
+.rowsplit img.icon
+{
+  width: 30px;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 0;
+}
+.footer a
+{
+  font-size: 12px;
+  margin: 2px 0;
+  color: gray;
+}
+.footer .address p
+{
+  font-size: 12px;
+  color: gray;
+  margin: 2px 0;
+}
+.footer h4
+{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.form-row
+{
+  display: flex;
+  gap: 10px;
+}
+.form-row > *
+{
+  flex: 1;
+}
+.oneLine
+{
+  display: flex;
+}
+.policy-links
+{
+  display: flex;
+  justify-content: center;
+}
+.policy-links
+{
+  display: flex;
+  justify-content: center;
+}
+
+.play-caption {
+  font-size: 14px;
+  color: gray;
+}
+.hireUsSection .left .quote {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 12px;
+}
+.hireUsSection .left .name {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.hireUsSection .left .title {
+  margin-top: -10px;
+  font-size: 12px;
+}
+.hireUsSection .left .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px)
+{
+  .background
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .logoSection {  
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 446px;
+  }
+  .pricingSection .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .itemGroup {
+    width: 50%;
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .itemGroup:first-child {
+    width: 100% ;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricingSection .content .itemGroup:nth-child(2),
+  .pricingSection .content .itemGroup:nth-child(3) {
+    width: 45%;
+    max-width: 45%;
+    flex-direction: column;
+  }
+  .rowsplit:nth-child(2)
+  {
+    width: 80%;
+    display: block;
+  }
+  .hireUsSection
+  {
+    flex-direction: column;
+  }
+  .footer
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footsplit:first-child
+  {
+      margin-left: 0;
+      width: 40%;
+      padding: 0;
+  }
+  .footsplit:nth-child(4)
+  {
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .lineConnect {
+    display: flex;
+    border: 0px;
+    flex-direction: column;
+    height: 150px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .features-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 170px;
+    left: 30%;
+    height: 150px;
+  }
+  .features-row div
+  {
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .pricingSection .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .content .itemGroup {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .pricingSection .content .itemGroup:nth-child(2),
+  .pricingSection .content .itemGroup:nth-child(3) {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .left 
+  {
+    align-items: center;
+    text-align: center;
+  }
+  .footer
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footsplit:nth-child(4)
+  {
+    margin-left: 0%;
+  }
+  .footsplit
+  {
+    text-align: center;
+  }
+  .footsplit:first-child
+  {
+      margin-left: 0;
+      width: 100%;
+      padding: 0;
+  }
+  .footsplit img
+  {
+    margin-left: 40%;
+  }
+}
