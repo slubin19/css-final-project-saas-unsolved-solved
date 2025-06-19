@@ -120,8 +120,8 @@
 }
 .logoCircle img
 {
-  width: 80%;
-  max-width: 32px;
+  width: 90%;
+  max-width: 70px;
   height: auto;
   padding: 3px;
   box-sizing: border-box;
@@ -169,7 +169,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: auto;
+  padding: 5px;
 }
 .topSection .content
 {
@@ -546,6 +546,7 @@ h1
   margin-top: 15px;
   font-style: italic;
   font-size: 12px;
+  margin-left: 0;
 }
 .hireUsSection .left .name {
   margin-top: 20px;
@@ -609,7 +610,17 @@ h1
   }
   .hireUsSection
   {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .left
+  {
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    max-width: 100%;
+    max-height: 400px;
   }
   .footer
   {
@@ -657,7 +668,6 @@ h1
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    align-items: stretch;
     width: 100%;
   }
   .content .itemGroup {
@@ -699,5 +709,18 @@ h1
   .footsplit img
   {
     margin-left: 40%;
+  }
+  .pricingSection .head
+  {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .left
+  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-height: fit-content;
   }
 }
